@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myframe.http.TestActivity">
+
+    <com.example.myframe.http.views.Header
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+    </com.example.myframe.http.views.Header>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPage"
+            android:layout_below="@+id/header2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </android.support.v4.view.ViewPager>
+        <RadioGroup
+            android:id="@+id/main_rg"
+            android:layout_below="@+id/viewPage"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:id="@+id/rb0"
+                android:checked="true"
+                android:text="首页"/>
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:id="@+id/rb1"
+                android:text="随手拍"/>
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:id="@+id/rb2"
+                android:text="个人中心"/>
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

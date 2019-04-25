@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".bus.activity.MainBusActivity">
+
+    <com.example.myframe.http.views.Header
+        android:id="@+id/header"
+        style="@style/Header"
+        app:header_title="@string/line_found">
+    </com.example.myframe.http.views.Header>
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000"/>
+    <RadioGroup
+        android:orientation="horizontal"
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/shouye">
+        <RadioButton
+            android:id="@+id/rb_line_fond"
+            android:text="@string/line_found"
+            style="@style/RadionButton"
+            android:drawableTop="@drawable/btn_01_bg"/>
+        <View style="@style/VerticalLine"/>
+
+        <RadioButton
+            android:id="@+id/rb_buchange"
+            android:text="@string/bus_change"
+            style="@style/RadionButton"
+            android:drawableTop="@drawable/btn_02_bg"/>
+        <View style="@style/VerticalLine"/>
+
+        <RadioButton
+            android:id="@+id/rb_station_fond"
+            android:text="@string/station_found"
+            style="@style/RadionButton"
+            android:drawableTop="@drawable/btn_03_bg"/>
+        <View style="@style/VerticalLine"/>
+
+        <RadioButton
+            android:id="@+id/rb_no_stop"
+            android:text="@string/no_stop"
+            style="@style/RadionButton"
+            android:drawableTop="@drawable/btn_04_bg"/>
+        <View style="@style/VerticalLine"/>
+
+        <RadioButton
+            android:id="@+id/rb_store_up"
+            android:text="@string/store_up"
+            style="@style/RadionButton"
+            android:drawableTop="@drawable/btn_05_bg"/>
+    </RadioGroup>
+
+</LinearLayout>

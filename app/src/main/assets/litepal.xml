@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="CityList"></dbname>
+    <version value="1"></version>
+    <list>
+        <mapping class="com.example.myframe.welcome.bean.CityList"></mapping>
+        <mapping class="com.example.myframe.welcome.bean.SaveLinelist"></mapping>
+        <mapping class="com.example.myframe.welcome.bean.StationList"></mapping>
+        <mapping class="com.example.myframe.bus.bean.LineBean"></mapping>
+        <mapping class="com.example.myframe.bus.bean.LineListBean"></mapping>
+        <mapping class="com.example.myframe.bus.bean.StationListBean"></mapping>
+        <mapping class="com.example.myframe.bus.bean.BusTimeListBean"></mapping>
+    </list>
+</litepal>

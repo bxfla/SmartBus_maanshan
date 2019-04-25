@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/select_sxx"
+        android:textColor="#222222"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="19sp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+    <View style="@style/HourLine"></View>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View style="@style/HourLine"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:id="@+id/tvNo"
+            android:text="@string/title_tips_cancel"
+            android:textColor="@color/color_forget_button"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

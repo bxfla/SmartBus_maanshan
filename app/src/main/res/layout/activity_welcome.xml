@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myframe.welcome.WelcomeActivity">
+
+    <LinearLayout
+        android:id="@+id/llHeard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="150dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:src="@drawable/ic_welcome"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:text="@string/app_name"
+            android:gravity="center"
+            android:textSize="32dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/color_bg_selected"/>
+    </LinearLayout>
+
+    <TextView
+        style="@style/textView_content"
+        android:layout_below="@+id/llHeard"
+        android:paddingTop="10dp"
+        android:text="@string/welcome_text1"
+        android:textColor="@color/color_bg_selected"/>
+
+    <TextView
+        style="@style/textView_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:text="@string/company_name"
+        android:textColor="@color/color_bg_selected"/>
+
+</RelativeLayout>
